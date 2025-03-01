@@ -59,7 +59,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:EntityPkg" href="ARCADIA_Method.capella#b6c929f3-e9ce-47fe-9193-41a3b601dd36"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_hqRhYF2HEeuksIAyCn6rwA" name="[OCB] 1.1 Operational Analysis Process" repPath="#_hqMB0F2HEeuksIAyCn6rwA" changeId="1740534743511">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_hqRhYF2HEeuksIAyCn6rwA" name="[OCB] 1.1 Operational Analysis Process" repPath="#_hqMB0F2HEeuksIAyCn6rwA" changeId="1740843968956">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg" href="ARCADIA_Method.capella#82ca0c0b-459d-40eb-b496-0edd425d4176"/>
       </ownedRepresentationDescriptors>
@@ -7204,15 +7204,15 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vUfZNV2IEeuksIAyCn6rwA" x="3" y="1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_vUfZNl2IEeuksIAyCn6rwA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vUfZN12IEeuksIAyCn6rwA" x="-8" y="-8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vUfZN12IEeuksIAyCn6rwA" x="-9" y="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_vUgAQF2IEeuksIAyCn6rwA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vUgAQV2IEeuksIAyCn6rwA" x="-13" y="-13"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vUgAQV2IEeuksIAyCn6rwA" x="-15" y="-13"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_vUfZMV2IEeuksIAyCn6rwA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_vUfZMl2IEeuksIAyCn6rwA" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vUfZM12IEeuksIAyCn6rwA" points="[40, -23, -121, 66]$[126, -70, -35, 19]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vUgAQl2IEeuksIAyCn6rwA" id="(0.42857142857142855,1.0)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vUfZM12IEeuksIAyCn6rwA" points="[-4, -5, -137, 50]$[102, -43, -31, 12]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vUgAQl2IEeuksIAyCn6rwA" id="(0.8285714285714286,0.2608695652173913)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vUgAQ12IEeuksIAyCn6rwA" id="(0.5737704918032787,0.17647058823529413)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_w4e7gF2IEeuksIAyCn6rwA" type="4001" element="_w3OXQF2IEeuksIAyCn6rwA" source="_hqNP8V2HEeuksIAyCn6rwA" target="_mWBCUF2IEeuksIAyCn6rwA">
