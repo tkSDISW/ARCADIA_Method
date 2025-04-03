@@ -399,7 +399,7 @@
                 source="#7414d3d0-1403-4dc1-8ca8-efc468b82ef1" target="#1f8083ac-3331-4670-af99-688cdf31dca0"/>
           </ownedFunctionalChains>
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
-              id="93573b97-3da9-43d3-bdb5-49f1dddc1492" name="OA - Analyze and Verify ">
+              id="93573b97-3da9-43d3-bdb5-49f1dddc1492" name="OA - Verify and Analyze">
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
                 id="56056063-5614-42d6-a466-6230f2ca8325" involved="#1543751d-eb10-49af-9836-41ef443ae52c"/>
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
@@ -2392,7 +2392,7 @@
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="a806ccd1-53b1-4981-83e8-6f4bf75dbd8a" name="Transition Actors and Entities and Define Logical Components"/>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
-            id="dd28828a-02c7-4cbd-b7be-9ec6756669bb" name="Analyze and Verify OA"
+            id="dd28828a-02c7-4cbd-b7be-9ec6756669bb" name="Verify Operational Analyis"
             description="&lt;p data-pm-slice=&quot;1 3 []&quot;>This capability encompasses:&lt;/p>&#xA;&#xA;&lt;ul>&#xA;&#x9;&lt;li>&#xA;&#x9;&lt;p>Communicating analysis results to all stakeholders&lt;/p>&#xA;&#x9;&lt;/li>&#xA;&#x9;&lt;li>&#xA;&#x9;&lt;p>Gathering and incorporating feedback&lt;/p>&#xA;&#x9;&lt;/li>&#xA;&#x9;&lt;li>&#xA;&#x9;&lt;p>Maintaining documentation of operational processes&lt;/p>&#xA;&#x9;&lt;/li>&#xA;&#x9;&lt;li>&#xA;&#x9;&lt;p>Ensuring continuous improvement through regular review and updates&lt;/p>&#xA;&#x9;&lt;/li>&#xA;&lt;/ul>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;">
           <ownedFunctionalChainAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:FunctionalChainAbstractCapabilityInvolvement"
               id="01ae815b-39fb-4f7d-bf81-aba6f4582e22" involved="#93573b97-3da9-43d3-bdb5-49f1dddc1492"/>
@@ -2858,6 +2858,8 @@ requirements&#xD;
               id="143425c1-7b25-4d25-abd1-a6837493fd67" involved="#d8e2f330-e7b5-4365-bfb1-bb52c1952e1f"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="6ecd0843-33ae-400b-b7e7-3a512ea802f5" involved="#e6b45572-4708-4486-998a-eb7841f2539c"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="c2e960ce-2ccb-4737-81d6-c8a10e4b1fd5" involved="#c3e91623-8965-4908-a91a-ad822a3b9786"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="c28c8c25-1121-43be-8b30-cf443d33e095" name="Capture User Customer Requirements">
