@@ -431,6 +431,11 @@
               id="bb014615-06af-48a3-a45f-273ef49888c0" name="LA -Transition  Functions and Exchanges from SA ">
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
                 id="1a641c2a-2c49-4b31-89a1-69a3f930ef94" involved="#4eb82a5c-7446-4bc7-ba65-453e2ddfa451"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="cf5f7d89-a981-4756-b191-813b8dea1dba" involved="#3dce620b-ed0c-4c4c-a8e6-8809ac7f850b"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="9fb308d2-c026-4ea2-9246-d8272fe4ab36" involved="#5fcead81-02b5-48db-bff0-4a04fe473169"
+                source="#cf5f7d89-a981-4756-b191-813b8dea1dba" target="#1a641c2a-2c49-4b31-89a1-69a3f930ef94"/>
           </ownedFunctionalChains>
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
               id="93e6baf9-4194-44cf-93fa-feb2ab976665" name="LA - Decompose Functions and Allocate to  Logical Components">
@@ -604,14 +609,9 @@
                 source="#cfb31bb7-753c-44cf-8fb8-975d68c92a22" target="#b5466ea2-0732-4d6e-be06-608d4feb351e"/>
           </ownedFunctionalChains>
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
-              id="f8960dfa-ba59-4dbc-a127-f72039853f8c" name="LA-Transition Actors and Entities and Define Logical Components">
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
-                id="05fd49a7-1557-442a-ba1b-3097efe33af0" involved="#a3a61049-18df-4527-b949-2e9b36267460"
-                source="#051c47c1-3b4c-4698-80fe-2c0f9a12ec99" target="#eec268d2-792f-4f3a-ba32-6107f614bdaf"/>
+              id="f8960dfa-ba59-4dbc-a127-f72039853f8c" name="LA- Define Logical Components">
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
                 id="eec268d2-792f-4f3a-ba32-6107f614bdaf" involved="#50f35862-1adc-431b-9931-c5fef2270e09"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="051c47c1-3b4c-4698-80fe-2c0f9a12ec99" involved="#7dad2680-5b52-4b7c-b56c-2ebb246eff86"/>
           </ownedFunctionalChains>
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
               id="af437741-bf0e-4e65-b79e-d64fbd2ac7eb" name="PA-Define Physical Behavior Components and Depoy to Physcal Nodel">
@@ -1503,6 +1503,16 @@
                 id="479cdbb0-3616-4e12-a645-d76ad4dbe12c" involved="#c8c0071f-4bb6-4207-af41-cb37a2c8aea0"/>
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainReference"
                 id="51ac2cb2-4fd9-4f4a-a691-adb89491255b" involved="#8ade5d27-1b77-4b43-84b6-ccf9bf8b6175"/>
+          </ownedFunctionalChains>
+          <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
+              id="4f3eed5c-a9c1-4f62-9ee1-3365ca606616" name="LA - Transiton Logical Actors and Entities">
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
+                id="7c6b9a63-00e5-4d04-a1e2-76ae363d29f2" involved="#7aad069d-6e99-4272-90ff-3a1e2594bdc4"
+                source="#3b7c1743-6b16-422b-8916-fe57d66ae4a3" target="#eae36335-fd98-4092-a86d-8df93113350c"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="eae36335-fd98-4092-a86d-8df93113350c" involved="#7dad2680-5b52-4b7c-b56c-2ebb246eff86"/>
+            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
+                id="3b7c1743-6b16-422b-8916-fe57d66ae4a3" involved="#5986da19-e70a-4147-ad5c-4eaf26cd18a9"/>
           </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="74f7e0cf-942e-49d0-a5de-278f71c2e43c" name="Review the System"/>
@@ -4868,9 +4878,6 @@ requirements&#xD;
               id="c037a9d7-470a-41e6-8393-38f40d925192" targetElement="#67808361-0744-46b6-bc3f-e7b2a2c7a938"
               sourceElement="#a805103b-18f2-4851-9d0e-4d4d18935524"/>
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="34e7ae60-a7d9-4b25-baa7-fd0299734df7" targetElement="#05fd49a7-1557-442a-ba1b-3097efe33af0"
-              sourceElement="#e90dbaec-ac51-479f-9a71-9cf506fa7269"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="d839f049-f88a-41be-9934-8ae621194939" targetElement="#bb4b2b4b-6558-41ec-98dc-023705ebf558"
               sourceElement="#de60d14d-7db1-4216-b130-ed27e96de754"/>
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
@@ -5005,9 +5012,6 @@ requirements&#xD;
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="dd63974a-f41f-48ef-bc98-ee916099cf3c" targetElement="#9c811894-6f9e-4cad-a0f3-80f02f4bade1"
               sourceElement="#c6b6fa05-7ef7-470b-9958-62af489e242d"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="775c30f9-5a4f-4dc5-994d-325650050782" targetElement="#051c47c1-3b4c-4698-80fe-2c0f9a12ec99"
-              sourceElement="#5e53da4f-1cc2-4739-acd9-16aee8e18ef9"/>
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="c5c78950-752d-438b-8c48-ab0bc42d4f9a" targetElement="#b47aa3e2-ac5b-4eea-b04e-44e481c2080d"
               sourceElement="#34237434-d201-46af-9195-c3094e9d273a"/>
