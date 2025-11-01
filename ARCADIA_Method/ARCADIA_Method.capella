@@ -268,8 +268,6 @@
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
                 id="5f00a0c1-3734-4228-907e-af90c0225382" involved="#44484afd-473a-4c21-b5ec-a8beb25c2539"
                 source="#078281ad-63e1-410d-a449-314080de3fb5" target="#0a2a4223-856c-4645-8897-c7fa298fd376"/>
-            <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
-                id="08c134b9-34ee-4d78-9a20-01fded1df0f4" involved="#cfc0ed70-0b71-437e-8727-c1a597713c36"/>
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
                 id="cf2d00e0-4d1e-4e6b-96ea-3db4d5b4dc35" involved="#99c00b16-cd4c-49a0-8764-508c8ef6825e"
                 source="#0a2a4223-856c-4645-8897-c7fa298fd376" target="#1ee45f86-5d39-4789-a5dd-1e7a0c36da31"/>
@@ -4774,9 +4772,6 @@ requirements&#xD;
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="f34fabf5-0db7-4803-9be6-d026085b5771" targetElement="#5f00a0c1-3734-4228-907e-af90c0225382"
               sourceElement="#bdfcfe06-23c4-45e1-9421-7700babeb0be"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="3bf07f83-5c2e-46db-95b4-6c0236c47864" targetElement="#08c134b9-34ee-4d78-9a20-01fded1df0f4"
-              sourceElement="#2c621a57-f47f-4543-9fa6-64443fb536e5"/>
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="3cd71aa1-c6c5-4034-a603-ecbbfa45d9da" targetElement="#cfca8705-23d5-4911-8530-55b25f05330e"
               sourceElement="#3ee2f79c-ac26-495d-93ad-4d0674607caf"/>
@@ -10710,6 +10705,8 @@ requirements&#xD;
           id="f995eaa0-3ab5-471f-8b70-b155f1ce8492" name="Logical Functions">
         <ownedLogicalFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
             id="800874ca-f084-4964-a14a-4a1da90e653c" name="Root Logical Function">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="b140f3a3-1b27-4acd-b73e-ccd9e3aadf99" name="SA  Function"/>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="82d737ad-9bae-42b2-8f92-f6e99811f400" targetElement="#528a2dc7-0697-4c77-b868-2607fbbdc6a3"
               sourceElement="#800874ca-f084-4964-a14a-4a1da90e653c"/>
@@ -10727,9 +10724,17 @@ requirements&#xD;
             name="PLM Centeric Modeling Solution" abstractType="#d21e36b3-9d6b-4bd0-b752-509cd690f188"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="d21e36b3-9d6b-4bd0-b752-509cd690f188" name="PLM Centeric Modeling Solution">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0cfc3048-be18-45a6-b6b7-f8756b0d6138"
+              name="Solar Array" abstractType="#b9bb4b8d-c8fe-46b7-a046-317ace8112af"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="040705c7-a4f8-49d6-8252-95954f9a9a42" targetElement="#f949f52c-8a9c-4ef3-bfc1-dbf6d784532c"
               sourceElement="#d21e36b3-9d6b-4bd0-b752-509cd690f188"/>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="b9bb4b8d-c8fe-46b7-a046-317ace8112af" name="Solar Array">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="fc550f8d-a7f3-4f9f-b1af-49bcad86ac10" targetElement="#b140f3a3-1b27-4acd-b73e-ccd9e3aadf99"
+                sourceElement="#b9bb4b8d-c8fe-46b7-a046-317ace8112af"/>
+          </ownedLogicalComponents>
         </ownedLogicalComponents>
       </ownedLogicalComponentPkg>
       <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
@@ -10742,6 +10747,12 @@ requirements&#xD;
           id="22ec2b26-4f09-43e9-8b1f-1ba15d2690cf" name="Physical Functions">
         <ownedPhysicalFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
             id="5848c8ff-a043-4772-9ca7-4eb8249dbb42" name="Root Physical Function">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="b902569d-63a6-4ac0-83a7-c2ec2fbdc7e0" name="SA  Function">
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="43a327b7-193e-4605-bbd7-cf1df2915ac3" targetElement="#b140f3a3-1b27-4acd-b73e-ccd9e3aadf99"
+                sourceElement="#b902569d-63a6-4ac0-83a7-c2ec2fbdc7e0"/>
+          </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="0fd45d4e-bce4-40ca-b400-8035d45fa727" targetElement="#800874ca-f084-4964-a14a-4a1da90e653c"
               sourceElement="#5848c8ff-a043-4772-9ca7-4eb8249dbb42"/>
@@ -10759,9 +10770,26 @@ requirements&#xD;
             name="Physical System" abstractType="#ee7c9390-7260-4918-be34-ccbf7267f865"/>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
             id="ee7c9390-7260-4918-be34-ccbf7267f865" name="Physical System">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="2f076408-071a-4a2e-9366-8dc4284461bd" targetElement="#0cfc3048-be18-45a6-b6b7-f8756b0d6138"
+              sourceElement="#b170c8b6-3e9b-4a51-b783-96d29e145c7b"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b170c8b6-3e9b-4a51-b783-96d29e145c7b"
+              name="Solar Array" abstractType="#663e8725-b141-4d33-bc73-0432cc36314f"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="93c2304f-9761-43ad-8d7b-320dbb96c245" targetElement="#d21e36b3-9d6b-4bd0-b752-509cd690f188"
               sourceElement="#ee7c9390-7260-4918-be34-ccbf7267f865"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="663e8725-b141-4d33-bc73-0432cc36314f" name="Solar Array" nature="BEHAVIOR">
+            <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+                id="fcb3362e-9fd9-4578-8e1b-8fdcc215a33a" targetElement="#fc550f8d-a7f3-4f9f-b1af-49bcad86ac10"
+                sourceElement="#c3f64bf9-ffd2-4f5d-a11e-ea32cae6d215"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="c3f64bf9-ffd2-4f5d-a11e-ea32cae6d215" targetElement="#b902569d-63a6-4ac0-83a7-c2ec2fbdc7e0"
+                sourceElement="#663e8725-b141-4d33-bc73-0432cc36314f"/>
+            <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+                id="51040ceb-fbad-47b4-956f-f640e37e7425" targetElement="#b9bb4b8d-c8fe-46b7-a046-317ace8112af"
+                sourceElement="#663e8725-b141-4d33-bc73-0432cc36314f"/>
+          </ownedPhysicalComponents>
         </ownedPhysicalComponents>
       </ownedPhysicalComponentPkg>
       <ownedLogicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.pa:LogicalArchitectureRealization"
