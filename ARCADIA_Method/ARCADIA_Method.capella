@@ -1867,7 +1867,7 @@
                   id="c79d1c0c-997f-49b6-91bb-f75cf4692064" name="Nodes" target="#9cef6cd6-a581-4e38-92ba-00c361354ff3"
                   source="#5c21bb38-84c4-466d-990b-1cd79c9ac136"/>
               <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                  id="e4916d34-e884-47e3-b456-0f6b98fb38c7" name="Allocated Behavior Compoents"
+                  id="e4916d34-e884-47e3-b456-0f6b98fb38c7" name="Allocated Behavior Components"
                   target="#66f73042-6a5f-409a-82e8-aafda4e5a178" source="#d5be8bf2-7c70-4f35-8b61-7fd95e088e56"/>
               <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
                   id="3654a146-c075-480c-a934-8e382460a8e8" name="Behavior PC" target="#66f73042-6a5f-409a-82e8-aafda4e5a178"
@@ -2214,7 +2214,7 @@
               id="97c30c88-171a-45e3-86bb-4c4382bf3883" name="Behavior PCS and Allocated Functions"
               target="#27079a89-d875-430a-bbe5-7504c9ec435b" source="#66f73042-6a5f-409a-82e8-aafda4e5a178"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="f6ee7a0e-f9fb-4906-96aa-4965d099b6e6" name="Interaction 50" target="#b7c92e0a-e5e4-440a-8f61-7bc3767b2a65"
+              id="f6ee7a0e-f9fb-4906-96aa-4965d099b6e6" name="Functions" target="#b7c92e0a-e5e4-440a-8f61-7bc3767b2a65"
               source="#27079a89-d875-430a-bbe5-7504c9ec435b"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="ee4be4b5-58b4-4a37-9770-57a671b05637" name="Nodes and Physical Links"
@@ -2630,17 +2630,17 @@
               id="ae452343-ccf3-4af8-909b-25ef08a7ad4d" name="Interfaces" target="#cfc0ed70-0b71-437e-8727-c1a597713c36"
               source="#728a16c4-3434-4ea3-9884-fdadd2c5abc3"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="6e737c9b-dc94-4619-90d2-2fc9e06b84cf" name="Interaction 190" target="#cfc0ed70-0b71-437e-8727-c1a597713c36"
+              id="6e737c9b-dc94-4619-90d2-2fc9e06b84cf" name="Physical nodes" target="#cfc0ed70-0b71-437e-8727-c1a597713c36"
               source="#5c21bb38-84c4-466d-990b-1cd79c9ac136"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="c44d41bf-ad96-4e1a-808f-8ec7834c88ab" name="Interaction 191" target="#cfc0ed70-0b71-437e-8727-c1a597713c36"
+              id="c44d41bf-ad96-4e1a-808f-8ec7834c88ab" name="Deployments" target="#cfc0ed70-0b71-437e-8727-c1a597713c36"
               source="#66f73042-6a5f-409a-82e8-aafda4e5a178"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="a17c9c67-3b8c-4927-99ff-bee0c374793f" name="Interaction 192" target="#cfc0ed70-0b71-437e-8727-c1a597713c36"
-              source="#d5be8bf2-7c70-4f35-8b61-7fd95e088e56"/>
+              id="a17c9c67-3b8c-4927-99ff-bee0c374793f" name="Functions Allocation"
+              target="#cfc0ed70-0b71-437e-8727-c1a597713c36" source="#d5be8bf2-7c70-4f35-8b61-7fd95e088e56"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="51d57d92-819d-4d95-8134-afa32e43fad4" name="Interaction 193" target="#cfc0ed70-0b71-437e-8727-c1a597713c36"
-              source="#de83a335-c4f5-4eb8-9851-f342f04a0508"/>
+              id="51d57d92-819d-4d95-8134-afa32e43fad4" name="Behavior Components"
+              target="#cfc0ed70-0b71-437e-8727-c1a597713c36" source="#de83a335-c4f5-4eb8-9851-f342f04a0508"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="69e49264-e54c-4522-b050-914152a3ebf4" name="System Requirements"
               target="#f4231901-b3a8-41c1-8071-cdaf1514bbba" source="#801a9d3d-0690-4f27-8dc0-faf9a74f76a7"/>
