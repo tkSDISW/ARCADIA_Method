@@ -1543,7 +1543,7 @@
                 id="3b7c1743-6b16-422b-8916-fe57d66ae4a3" involved="#5986da19-e70a-4147-ad5c-4eaf26cd18a9"/>
           </ownedFunctionalChains>
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.oa:OperationalProcess"
-              id="8cc25a2c-9bc1-4206-aaaa-9302e5456085" name="Create abd Reflect on Notes with Agent">
+              id="8cc25a2c-9bc1-4206-aaaa-9302e5456085" name="Create and Reflect on Notes with Agent">
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementLink"
                 id="4c893d50-bfad-4ff9-a987-f19715df537d" involved="#312eb7bd-80ad-4c43-997b-adbeb66d8fd5"
                 source="#b316de4d-523a-4614-8204-1bae4e285bfd" target="#ea35c480-53a2-44f5-b168-d2d52801f69f"/>
